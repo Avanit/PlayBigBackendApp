@@ -1,18 +1,20 @@
 package com.asaneasa.sports.playbigbackend.responses;
 
+import java.math.BigDecimal;
+
 /**
  * Created by adi2ky on 3/13/16.
  */
-public class User {
+public class UserResponse {
     private String firstName;
     private String lastName;
-    private String virtualBalance;
+    private BigDecimal virtualBalance;
 
     public String getFirstName() {
         return firstName;
     }
 
-    public User setFirstName(String firstName) {
+    public UserResponse setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -21,16 +23,16 @@ public class User {
         return lastName;
     }
 
-    public User setLastName(String lastName) {
+    public UserResponse setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
 
-    public String getVirtualBalance() {
+    public BigDecimal getVirtualBalance() {
         return virtualBalance;
     }
 
-    public User setVirtualBalance(String virtualBalance) {
+    public UserResponse setVirtualBalance(BigDecimal virtualBalance) {
         this.virtualBalance = virtualBalance;
         return this;
     }

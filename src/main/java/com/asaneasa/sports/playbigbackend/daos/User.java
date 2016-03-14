@@ -2,20 +2,19 @@ package com.asaneasa.sports.playbigbackend.daos;
 
 import com.asaneasa.sports.playbigbackend.daos.enums.UserStatus;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 /**
  * Created by adi2ky on 3/13/16.
  */
 @Entity
+@Table(name = "User")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int userId;
+    @Enumerated(EnumType.STRING)
     private UserStatus status;
     private String firstName;
     private String lastName;
