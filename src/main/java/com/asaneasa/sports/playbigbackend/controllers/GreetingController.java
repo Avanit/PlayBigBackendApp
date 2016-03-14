@@ -1,9 +1,9 @@
-package controllers;
+package com.asaneasa.sports.playbigbackend.controllers;
 
+import com.asaneasa.sports.playbigbackend.responses.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import responses.Greeting;
 
 @RestController
 public class GreetingController {

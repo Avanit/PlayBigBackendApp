@@ -1,11 +1,14 @@
-package hello;
+package com.asaneasa.sports.playbigbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com/asaneasa/sports/playbigbackend/responses",
+        "com/asaneasa/sports/playbigbackend/controllers"})
 public class Application extends SpringBootServletInitializer {
 
     @Override

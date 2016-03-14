@@ -1,4 +1,4 @@
-package responses;
+package com.asaneasa.sports.playbigbackend.responses;
 
 public class Greeting {
 
