@@ -7,8 +7,10 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com/asaneasa/sports/playbigbackend/responses",
-        "com/asaneasa/sports/playbigbackend/controllers"})
+@ComponentScan(basePackages = {
+        "com/asaneasa/sports/playbigbackend/responses",
+        "com/asaneasa/sports/playbigbackend/controllers",
+        "com/asaneasa/sports/playbigbackend/repositories"})
 public class Application extends SpringBootServletInitializer {
 
     @Override
