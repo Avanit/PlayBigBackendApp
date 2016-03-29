@@ -1,0 +1,10 @@
+branch-defaults:
+  addUserAPI1:
+    environment: playbigapplication-dev
+global:
+  application_name: PlayBigApplication
+  default_ec2_keyname: PlayBigNCAKeyPair
+  default_platform: Tomcat 8 Java 8
+  default_region: us-west-1
+  profile: null
+  sc: git
